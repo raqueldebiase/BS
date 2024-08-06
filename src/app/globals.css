@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  font-family: Helvetica, sans-serif;
+}
+
+.product-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 1rem;
+}
+
+.cart-summary {
+  margin-top: 2rem;
+}
+
+/* backgrounds */
+
+.bg-hero {
+  background-image: url('../../public/backgrounds/hero.jpeg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.bg-search {
+  background-image: url('../../public/search.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.bg-presentation,
+.bg-footer {
+  background-color: #071323;
+}
+
+
