@@ -23,7 +23,7 @@ const Search: React.FC<SearchProps> = ({ onSearch }) => {
         <input
           type="text"
           placeholder="Search..."
-          className="w-full py-3 px-4 border-gray-300 focus:outline-none focus:border-blue-500 bg-white"
+          className="w-full py-3 px-4 border-gray-300 focus:outline-none focus:border-blue-500 bg-white bg-opacity-70 hover:bg-opacity-90"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />

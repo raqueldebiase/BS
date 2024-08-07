@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useContext, useState, ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import { Artwork } from '../context/GalleryContext'; // Importar a interface Artwork
 
 interface CartContextType {
@@ -13,6 +13,19 @@ const CartContext = createContext<CartContextType | undefined>(undefined);
 
 export const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [cart, setCart] = useState<Artwork[]>([]);
+
+  useEffect(() => {
+    // Recupera o estado inicial do localStorage apenas no lado do cliente
+    const storedCart = localStorage.getItem('cart');
+    if (storedCart) {
+      setCart(JSON.parse(storedCart));
+    }
+  }, []);
+
+  useEffect(() => {
+    // Salva o estado do carrinho no localStorage sempre que ele mudar
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }, [cart]);
 
   const addToCart = (artwork: Artwork) => {
     setCart(prevCart => [...prevCart, artwork]);

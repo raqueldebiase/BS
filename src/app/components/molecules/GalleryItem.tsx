@@ -8,10 +8,11 @@ interface GalleryItemProps {
   description: string;
   width: number;
   height: number;
+  author: string;
 }
 
 const GalleryItem: React.FC<GalleryItemProps> = (props) => {
-  console.log('GalleryItem props:', props); // Log para verificar os props
+  
   return (
     <ImageItem {...props} />
   );

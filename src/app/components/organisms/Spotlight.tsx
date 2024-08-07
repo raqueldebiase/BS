@@ -16,18 +16,18 @@ const Spotlight = () => {
   const imageInfos = [
     {
       url: imageUrl1,
-      title: 'Obra 1',
-      description: 'Descrição da Obra 1'
+      title: 'Harvesting Time',
+      description: 'Elias Valtieri'
     },
     {
       url: imageUrl2,
-      title: 'Obra 2',
-      description: 'Descrição da Obra 2'
+      title: 'Blooming Field',
+      description: 'Johannes Vermmer'
     },
     {
       url: imageUrl3,
-      title: 'Obra 3',
-      description: 'Descrição da Obra 3'
+      title: 'Retrato Moderno: série 01',
+      description: 'B. Motta'
     }
   ];
 
@@ -65,8 +65,8 @@ const Spotlight = () => {
             }`}
             style={{ backgroundImage: `url(${imageInfo.url})` }}
           >
-            <div className="absolute bottom-4 left-4 bg-black bg-opacity-60 text-white p-4 rounded ">
-              <h1 className="text-lg">{imageInfo.title}</h1>
+            <div className="absolute bottom-4 left-4 bg-black bg-opacity-60 text-white p-4 rounded-sm ">
+              <h1 className="text-lg italic">{imageInfo.title}</h1>
               <p className='text-sm font-light my-2'>{imageInfo.description}</p>
               {/* <ButtonMore /> */}
             </div>

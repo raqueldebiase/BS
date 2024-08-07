@@ -11,7 +11,7 @@ const Cart: React.FC = () => {
 
   return (
     <div className="container mx-auto p-6 min-h-screen">
-      <h1 className="text-2xl font-bold text-gray-800 my-10">Your bag resume</h1>
+      <h1 className="text-2xl font-bold text-gray-800 my-10">Your Bag</h1>
       <div className="bg-white shadow-md rounded-lg overflow-x-auto">
         <table className="min-w-full divide-y divide-gray-200">
           <thead className="bg-gray-50">
@@ -29,10 +29,10 @@ const Cart: React.FC = () => {
               <tr key={item.id}>
                 <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                   <Image
-                    src={item.src} // Certifique-se de que `src` está disponível
+                    src={item.src}
                     alt={item.title}
-                    width={150} // Tamanho menor para a imagem
-                    height={150} // Tamanho menor para a imagem
+                    width={150}
+                    height={150}
                     className="rounded-sm"
                   />
                 </td>
@@ -41,7 +41,7 @@ const Cart: React.FC = () => {
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">1</td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">${item.price.toFixed(2)}</td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-400 cursor-pointer hover:text-red-600" onClick={() => removeFromCart(item.id)}>
-                  Remove item
+                  Remove Item
                 </td>
               </tr>
             ))}
@@ -50,7 +50,6 @@ const Cart: React.FC = () => {
       </div>
       <div className="mt-6">
         <CartSummary cart={cart} />
-        
       </div>
       <div className="flex justify-end mt-10">
         <ButtonToPay />

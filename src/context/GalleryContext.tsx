@@ -11,6 +11,11 @@ export interface Artwork {
   width: number;
   height: number;
   price: number;
+  author: string;
+  dateCreated?: string; // Novo campo
+  medium?: string; // Novo campo
+  curatorialComment?: string; // Novo campo
+  additionalImage?: string; // Novo campo
 }
 
 interface GalleryContextType {

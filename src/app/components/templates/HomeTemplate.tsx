@@ -7,8 +7,7 @@ import Gallery from '../organisms/Gallery';
 import { Artwork } from '../../../context/GalleryContext'; // Importar a interface Artwork
 import Magazine from '../organisms/Magazine';
 import Search from '../organisms/Search';
-import Footer from '../organisms/Footer';
-import { Artworks } from '@/data/artworks';
+
 
 interface HomeTemplateProps {
   artworks: Artwork[];
@@ -33,7 +32,6 @@ const HomeTemplate: React.FC<HomeTemplateProps> = ({ artworks, cart, addToCart }
         <Magazine />
       </main>
       <Search onSearch={handleSearch} artworks={artworks} />
-      <Footer />
     </div>
   );
 };

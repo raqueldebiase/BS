@@ -53,7 +53,7 @@ const GalleryPage: React.FC<GalleryPageProps> = ({ artworks }) => {
             <Link
               key={artwork.id}
               href={`/artwork/${artwork.id}`} // Atualizar o link para a página de detalhes
-              className="p-4 bg-white shadow-md rounded-lg"
+              className="p-4 bg-white shadow-md rounded-sm"
             >
               <div className="relative">
                 <Image
@@ -61,7 +61,7 @@ const GalleryPage: React.FC<GalleryPageProps> = ({ artworks }) => {
                   alt={artwork.title}
                   width={artwork.width}
                   height={artwork.height}
-                  className="w-full h-48 object-cover rounded-t-lg"
+                  className="w-full h-48 object-cover rounded-t-sm"
                 />
                 <h3 className="text-xl mt-2">{artwork.title}</h3>
                 <p>${artwork.price.toFixed(2)}</p>

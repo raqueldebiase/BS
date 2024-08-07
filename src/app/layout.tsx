@@ -4,6 +4,7 @@ import Header from "./components/organisms/Header";
 import "./globals.css";
 import { GalleryProvider } from "@/context/GalleryContext";
 import { CartProvider } from "@/context/CartContext";
+import Footer from "./components/organisms/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,8 +23,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <CartProvider>
           <GalleryProvider>
-            <Header /> {/* Adicione o Header aqui para que apareça em todas as páginas */}
+            <Header /> 
             <main>{children}</main>
+            <Footer />
           </GalleryProvider>
         </CartProvider>
       </body>
