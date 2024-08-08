@@ -10,9 +10,9 @@ const Upcoming = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const images = [
-    { src: Image1, title: 'Title 1', description: 'Description 1' },
-    { src: Image2, title: 'Title 2', description: 'Description 2' },
-    { src: Image3, title: 'Title 3', description: 'Description 3' },
+    { src: Image1, title: 'Silence on the Canvas', description: 'Where the absence of color and form transforms emptiness into a collective contemplation.' },
+    { src: Image2, title: 'Van Gogh Reimagined: Digital Echoes', description: 'Exploring the timeless brilliance of Van Gogh through the lens of modern digital art.' },
+    { src: Image3, title: 'Alexander Moreau: The Art of Piano', description: 'Capturing the intimacy and passion of a private piano recital.' },
   ];
 
   const nextSlide = () => {
@@ -45,8 +45,8 @@ const Upcoming = () => {
       </div>
       <div className="absolute inset-0 flex items-end">
         <div className="bg-black bg-opacity-50 text-white p-4 w-full">
-          <h2 className="text-lg mb-2">{currentImage.title}</h2>
-          <p>{currentImage.description}</p>
+          <h2 className="text-md font-light mb-2">{currentImage.title}</h2>
+          <p className='font-extralight tracking-wide text-sm'>{currentImage.description}</p>
         </div>
       </div>
       <div className="absolute top-1/2 -translate-y-1/2 left-4 cursor-pointer flex items-center justify-center" onClick={prevSlide}>
