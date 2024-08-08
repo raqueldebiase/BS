@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import ImageCard from '../atoms/ImageCard';
 import Upcoming from '../molecules/Upcoming';
 import News1 from '../../../../public/magazine/steven-su-kbZkBKrYBAk-unsplash.jpg';
@@ -9,10 +8,10 @@ import News4 from '../../../../public/magazine/ajeet-mestry-UBhpOIHnazM-unsplash
 
 const Magazine = () => {
   const images = [
-    { src: News1, title: 'Title 1', description: 'Description 1' },
-    { src: News2, title: 'Title 2', description: 'Description 2' },
-    { src: News3, title: 'Title 3', description: 'Description 3' },
-    { src: News4, title: 'Title 4', description: 'Description 4' },
+    { src: News1, title: 'Street Feast', description: 'A vibrant street scene where culinary tradition meets the energy of the urban environment.' },
+    { src: News2, title: 'Vintage Beach Escape', description: 'Discover the Charm of 1930s Swedish Travel Posters in Our Nostalgic Exhibition.' },
+    { src: News3, title: 'Sunlit Memories', description: 'Relive the Golden Age of Coastal Travel.' },
+    { src: News4, title: 'Echoes of Innovation', description: 'The Museum of Everyday Obsolescence.' },
     // Adicione mais imagens conforme necessário
   ];
 
