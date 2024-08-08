@@ -1,3 +1,6 @@
+
+'use client';
+
 import React from 'react';
 import { useSearchParams } from 'next/navigation';
 import Search from './Search';
