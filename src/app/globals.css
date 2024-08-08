@@ -18,6 +18,13 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+
 .product-list {
   display: flex;
   gap: 1rem;

@@ -4,14 +4,13 @@ import Link from "next/link";
 interface NavLinkProps {
   href: string;
   children: React.ReactNode;
+  onClick?: () => void; // Adicione a prop onClick
 }
 
-const NavLink: React.FC<NavLinkProps> = ({ href, children }) => {
+const NavLink: React.FC<NavLinkProps> = ({ href, children, onClick }) => {
   return (
-    <Link href={href} className="relative group">
-     
-        {children}
-      
+    <Link href={href} onClick={onClick} className="block px-4 py-2 rounded">
+      {children}
     </Link>
   );
 };
