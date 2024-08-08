@@ -46,7 +46,7 @@ const DetailPage: React.FC = () => {
                   alt={artwork.title}
                   width={artwork.width}
                   height={artwork.height}
-                  className="w-full h-auto object-cover rounded-sm shadow-lg"
+                  className="w-full h-auto object-cover rounded-sm shadow-lg mb-10 "
                 />
               )}
               {artwork.additionalImage && (

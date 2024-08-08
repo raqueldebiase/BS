@@ -27,7 +27,7 @@ const Gallery: React.FC = () => {
           <GalleryItem
             key={image.id}
             id={image.id}
-            src={image.src}
+            src={image.src || '/my-ecommerce-app/public/search.jpg'}
             title={image.title}
             author={image.author}
             description={image.description}
