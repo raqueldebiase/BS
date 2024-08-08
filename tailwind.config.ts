@@ -11,7 +11,7 @@ const config: Config = {
       colors: {
         textPrimary: '#333333', 
         Navy: '#071323',
-        Caramel: '#653F26',
+        Caramel: '#8C5C3B',
         CaramelLight: '#B46143',
       },
     },

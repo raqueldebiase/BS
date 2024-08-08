@@ -15,7 +15,7 @@ const Presentation = () => {
           </div>
         </div>
         <div className="text-Caramel mx-auto flex items-center justify-center leading-loose tracking-wide">
-          <p>
+          <p className='text-xl font-medium'>
             This website is an example of an e-commerce platform built with Next.js. It is the second version of my first project as a frontend developer, originally created with HTML, CSS, and JavaScript (with a touch of desperation). Three years later, I decided to revamp it using new technologies and the knowledge I have acquired over time. In addition to Next.js, I used Tailwind, Vercel, Git, Auth.js, among other tools.
           </p>
         </div>
