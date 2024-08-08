@@ -59,14 +59,14 @@ const Header: React.FC = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`fixed inset-0 bg-gray-800 bg-opacity-40 backdrop-blur-md text-white transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`}>
+      <div className={`fixed inset-0 bg-gray-800 bg-opacity-50 backdrop-blur-md text-white transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`}>
         <div className="flex flex-col p-4">
           
           {/* Logo for Mobile */}
           <div className="mb-4 flex justify-between">
             <Logo />
             <button 
-              className="text-Caramel text-3xl" 
+              className="text-white text-3xl" 
               onClick={toggleMenu} 
               aria-label="Close menu"
             >
