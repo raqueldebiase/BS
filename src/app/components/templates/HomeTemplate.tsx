@@ -27,10 +27,10 @@ const HomeTemplate: React.FC<HomeTemplateProps> = ({ artworks, cart, addToCart }
       <Hero />
       <Banner />
       <Spotlight />
-      <main className="max-w-full lg:max-w-[1400px] mx-auto p-4">
+      <div className="max-w-full lg:max-w-[1400px] mx-auto p-4">
         <Gallery />
         <Magazine />
-      </main>
+      </div>
       <Search onSearch={handleSearch} artworks={artworks} />
     </div>
   );

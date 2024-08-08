@@ -13,6 +13,7 @@ const config: Config = {
         Navy: '#071323',
         Caramel: '#8C5C3B',
         CaramelLight: '#B46143',
+        CaramelExtraLight: '#A67D5B',
       },
     },
   },

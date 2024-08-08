@@ -66,7 +66,7 @@ const Spotlight = () => {
             style={{ backgroundImage: `url(${imageInfo.url})` }}
           >
             <div className="absolute bottom-4 left-4 bg-black bg-opacity-60 text-white p-4 rounded-sm ">
-              <h1 className="text-lg italic">{imageInfo.title}</h1>
+              <h2 className="text-lg italic">{imageInfo.title}</h2>
               <p className='text-sm font-light my-2'>{imageInfo.description}</p>
               {/* <ButtonMore /> */}
             </div>
