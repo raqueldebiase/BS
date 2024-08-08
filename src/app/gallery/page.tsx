@@ -1,17 +1,17 @@
-// app/gallery/page.tsx
-import React from 'react';
+import React, { Suspense } from 'react';
 import GalleryPage from '../components/organisms/GalleryPage';
-import { artworksData } from '../../data/artworks'; 
-
+import { artworksData } from '../../data/artworks';
 
 const sanitizedArtworks = artworksData.map((artwork) => ({
   ...artwork,
-  src: artwork.src || '/my-ecommerce-app/public/search.jpg', 
+  src: artwork.src || '/my-ecommerce-app/public/search.jpg',
 }));
 
 const Gallery: React.FC = () => {
   return (
-    <GalleryPage artworks={sanitizedArtworks} />
+    <Suspense fallback={<div>Loading gallery...</div>}>
+      <GalleryPage artworks={sanitizedArtworks} />
+    </Suspense>
   );
 };
 
