@@ -42,13 +42,8 @@ const GalleryPage: React.FC<GalleryPageProps> = ({ artworks }) => {
 
   return (
     <div>
-      {/* Search Component */}
-      <div className="py-4 px-4 bg-gray-100">
-        <Search onSearch={handleSearch} artworks={artworks} />
-      </div>
-
-      {/* Gallery Results */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+      <Search onSearch={handleSearch} artworks={artworks} />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-20 max-w-full lg:max-w-[1400px] mx-auto p-4">
         {filteredArtworks.map((artwork) => (
           <Link
             key={artwork.id}
@@ -72,7 +67,7 @@ const GalleryPage: React.FC<GalleryPageProps> = ({ artworks }) => {
 
       {/* Clear Search Button */}
       {filteredArtworks.length < artworks.length && (
-        <div className="py-4 px-4 flex justify-end">
+        <div className="py-20 px-4 flex justify-end">
           <button
             className="py-3 px-6 ml-2 bg-black bg-opacity-70 text-white hover:bg-opacity-90 transition duration-300 ease-in-out rounded-sm"
             onClick={handleClearSearch}
