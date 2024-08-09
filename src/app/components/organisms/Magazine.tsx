@@ -16,7 +16,7 @@ const Magazine = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto pt-10 pb-20" id='magazine'>
+    <div className="max-w-7xl mx-auto pt-10 md:pb-20" id='magazine'>
       <h2 className="text-2xl py-5 mb-4">Magazine</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-6">
         <div className="">

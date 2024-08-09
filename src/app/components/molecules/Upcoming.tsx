@@ -26,7 +26,7 @@ const Upcoming = () => {
   const currentImage = images[activeIndex];
 
   return (
-    <div className="relative overflow-hidden h-[23rem] md:h-[25rem]">
+    <div className="relative overflow-hidden h-[20rem] md:h-[25rem]">
       <div className="absolute inset-0 flex">
         {images.map((image, index) => (
           <div
