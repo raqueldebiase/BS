@@ -13,14 +13,14 @@ const Gallery: React.FC = () => {
     setImages((prevImages) => {
       const nextImages = artworksData.slice(prevImages.length, prevImages.length + 7);
       if (nextImages.length === 0) {
-        setShowButton(false); // Desativa o botão se não houver mais imagens
+        setShowButton(false); 
       }
       return [...prevImages, ...nextImages];
     });
   };
 
   return (
-    <div className="max-w-7xl mx-auto py-10" id='preview'>
+    <div className="max-w-7xl mx-auto md:py-10" id='preview'>
       <h2 className="text-2xl py-5 mb-4">Gallery</h2>
       <div className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
         {images.map((image) => (
