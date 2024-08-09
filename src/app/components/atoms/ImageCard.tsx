@@ -10,7 +10,7 @@ interface ImageCardProps {
 
 const ImageCard: React.FC<ImageCardProps> = ({ src, title, description }) => {
   return (
-    <div className="relative h-full group">
+    <div className="relative h-full group ">
       <div className="relative h-full">
         <Image
           src={src}

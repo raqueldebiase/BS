@@ -18,16 +18,16 @@ const Magazine = () => {
   return (
     <div className="max-w-7xl mx-auto pt-10 pb-20" id='magazine'>
       <h2 className="text-2xl py-5 mb-4">Magazine</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="h-96">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-20 md:gap-6">
+        <div className="">
           <h3 className="text-lg mb-4">Upcoming</h3>
           <Upcoming />
         </div>
-        <div className="h-80">
+        <div className="">
           <h3 className="text-lg mb-4">Talking about</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {images.map((image, index) => (
-              <div key={index} className="h-48 relative overflow-hidden ">
+              <div key={index} className=" md:h-48 mb-4 md:mb-0 relative overflow-hidden ">
                 <ImageCard
                   src={image.src}
                   title={image.title}
