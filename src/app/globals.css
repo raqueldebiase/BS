@@ -55,9 +55,9 @@ body {
 @media (max-width: 768px) {
   .bg-hero {
     background-image: url('../../public/backgrounds/hero-bg-mobile.png');
-    background-size: cover; /* Use cover para preencher toda a área */
+    background-size: contain; 
     background-position: center; 
-    /* background-attachment: scroll; */
+    background-attachment: scroll;
   }
 }
 
