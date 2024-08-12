@@ -59,7 +59,7 @@ body {
     background-position: top center; 
   }
   .bg-search {
-    background-image: url('../../public/search.jpg');
+    background-image: url('../../public/backgrounds/footer-bg-mobile.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
