@@ -58,6 +58,13 @@ body {
     background-size: contain; 
     background-position: top center; 
   }
+  .bg-search {
+    background-image: url('../../public/search.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+  }
 }
 
 
