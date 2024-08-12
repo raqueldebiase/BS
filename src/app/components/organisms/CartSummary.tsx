@@ -15,13 +15,13 @@ const CartSummary: React.FC<CartSummaryProps> = ({ cart }) => {
         <>
           <ul className="space-y-2 mb-4">
             {cart.map(item => (
-              <li key={item.id} className="flex justify-between items-center py-2 px-4 border-b border-gray-200">
+              <li key={item.id} className="flex justify-between items-center py-2 border-b border-gray-200">
                 <span className="text-gray-700 font-medium">{item.title}</span>
                 <span className="text-gray-600">${item.price.toFixed(2)}</span>
               </li>
             ))}
           </ul>
-          <div className="flex justify-between font-semibold text-gray-800">
+          <div className="flex justify-between font-semibold text-gray-800 py-10">
             <span>Total:</span>
             <span>${total.toFixed(2)}</span>
           </div>

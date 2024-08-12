@@ -11,7 +11,7 @@ const Cart: React.FC = () => {
 
   return (
     <div className="container mx-auto p-6 min-h-screen">
-      <h1 className="text-xl md:text-2xl font-bold text-gray-800 my-10">Your Bag</h1>
+      <h1 className="text-xl md:text-2xl font-bold text-gray-800 my-5 md:my-10">Your Bag</h1>
       
       {/* Table Container */}
       <div className="bg-white md:shadow-md rounded-lg overflow-hidden">
