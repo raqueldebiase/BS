@@ -35,12 +35,13 @@ body {
 /* backgrounds */
 
 .bg-hero {
-  background-image: url('../../public/backgrounds/hero.jpeg');
+  background-image: url('/backgrounds/hero.webp');
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
+
 
 .bg-search {
   background-image: url('../../public/search.jpg');
