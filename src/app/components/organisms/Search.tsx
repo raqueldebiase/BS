@@ -16,7 +16,7 @@ const Search: React.FC<SearchProps> = ({ onSearch }) => {
   };
 
   return (
-    <div className="relative flex flex-col items-center justify-center py-20 mt-10 px-4 h-96 bg-search">
+    <div className="relative flex flex-col items-center justify-center py-20 mt-10 px-4 h-96 bg-search" id='search'>
       <div className="absolute inset-0 bg-gray-900 opacity-40"></div>
       <h2 className="text-3xl mb-6 text-white relative z-10">Looking for something?</h2>
       <div className="flex w-full max-w-md relative z-10">

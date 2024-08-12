@@ -18,8 +18,6 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
-
-
 .product-list {
   display: flex;
   gap: 1rem;
@@ -67,12 +65,32 @@ body {
   }
 }
 
-
-
-
 .bg-presentation,
 .bg-footer {
   background-color: #071323;
 }
+
+/* hover nav header */
+
+.nav-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px; 
+  background-color: transparent;
+  transition: background-color 0.3s ease; 
+}
+
+.nav-item:hover::before {
+  background-color: #B46143; 
+}
+
 
 

@@ -45,17 +45,29 @@ const Header: React.FC = () => {
           </button>
         </div>
 
-        <nav className="hidden md:flex md:items-center md:justify-between md:bg-transparent md:space-x-4 ">
-          <ul className="flex flex-row space-x-4 p-4">
-            <li><NavLink href="/#spotlight" onClick={closeMenu}>Art Spotlight</NavLink></li>
-            <li><NavLink href="/#preview" onClick={closeMenu}>Preview</NavLink></li>
-            <li><NavLink href="/#magazine" onClick={closeMenu}>Magazine</NavLink></li>
-            <li><NavLink href="/gallery" onClick={closeMenu}>Gallery</NavLink></li>
-          </ul>
-          <div className="space-x-4">
-            <ActionIcon href="/cart" icon="🛒" label="Bag" />
-          </div>
-        </nav>
+        <nav className="hidden md:flex md:items-center md:justify-between md:bg-transparent md:space-x-4">
+  <ul className="flex flex-row space-x-4 p-4">
+    <li className="nav-item">
+      <NavLink href="/#spotlight" onClick={closeMenu} >Art Spotlight</NavLink>
+    </li>
+    <li className="nav-item">
+      <NavLink href="/#preview" onClick={closeMenu}>Preview</NavLink>
+    </li>
+    <li className="nav-item">
+      <NavLink href="/#magazine" onClick={closeMenu}>Magazine</NavLink>
+    </li>
+    <li className="nav-item">
+      <NavLink href="/gallery" onClick={closeMenu}>Gallery</NavLink>
+    </li>
+    <li className="nav-item">
+      <NavLink href="/#search" onClick={closeMenu}>Search</NavLink>
+    </li>
+  </ul>
+  <div className="space-x-4">
+    <ActionIcon href="/cart" icon="🛒" label="Bag" />
+  </div>
+</nav>
+
       </div>
 
       {/* Mobile Menu */}
@@ -80,6 +92,7 @@ const Header: React.FC = () => {
             <li><NavLink href="/#preview" onClick={closeMenu}>Preview</NavLink></li>
             <li><NavLink href="/#magazine" onClick={closeMenu}>Magazine</NavLink></li>
             <li><NavLink href="/gallery" onClick={closeMenu}>Gallery</NavLink></li>
+            <li><NavLink href="/#search" onClick={closeMenu}>Search</NavLink></li>
           </ul>
 
           {/* ActionIcons for Mobile */}
