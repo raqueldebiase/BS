@@ -60,7 +60,7 @@ const DetailPage: React.FC = () => {
               )}
             </div>
             {/* Conteúdo */}
-            <div className="flex-grow md:w-1/2 pl-6">
+            <div className="flex-grow md:w-1/2 pl-0 md:pl-6 item-content">
               <h1 className="text-2xl text-gray-800 mb-2">
                 <span className="text-base text-gray-500">Title:</span> {artwork.title}
               </h1>
@@ -77,10 +77,10 @@ const DetailPage: React.FC = () => {
             </div>
             <div className="border-t border-gray-300 pt-4 mt-6">
               <h4 className="text-md font-semibold text-gray-800 mb-2">Technical Details:</h4>
-              <ul className="list-disc list-inside text-gray-600">
-                <li><strong>Medium:</strong> {artwork.medium || 'Not specified'}</li>
-                <li><strong>Dimensions:</strong> {artwork.width} x {artwork.height} cm</li>
-                <li><strong>Date Created:</strong> {artwork.dateCreated || 'Not specified'}</li>
+              <ul className="list-none text-gray-600">
+                <li>Medium: {artwork.medium || 'Not specified'}</li>
+                {/* <li>Dimensions: {artwork.width} x {artwork.height} cm</li> */}
+                <li>Date Created: {artwork.dateCreated || 'Not specified'}</li>
               </ul>
             </div>
           </div>

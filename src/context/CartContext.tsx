@@ -1,10 +1,11 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { Artwork } from '../context/GalleryContext'; // Importar a interface Artwork
+import { Artwork } from '../context/GalleryContext'; // Certifique-se de que esta interface está correta
 
 interface CartContextType {
   cart: Artwork[];
+  setCart: React.Dispatch<React.SetStateAction<Artwork[]>>;
   addToCart: (artwork: Artwork) => void;
   removeFromCart: (id: string) => void;
 }
@@ -36,7 +37,7 @@ export const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   };
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
+    <CartContext.Provider value={{ cart, setCart, addToCart, removeFromCart }}>
       {children}
     </CartContext.Provider>
   );

@@ -9,7 +9,7 @@ const CartSummary: React.FC<CartSummaryProps> = ({ cart }) => {
   const total = cart.reduce((sum, item) => sum + item.price, 0);
 
   return (
-    <div className="bg-white shadow-md rounded-lg p-6 mt-6 border border-gray-200">
+    <div className="bg-white shadow-md rounded-sm p-6 mt-6 border border-gray-200">
       <h2 className="text-xl font-semibold text-gray-800 mb-4">Cart Summary</h2>
       {cart.length > 0 ? (
         <>
@@ -34,3 +34,5 @@ const CartSummary: React.FC<CartSummaryProps> = ({ cart }) => {
 };
 
 export default CartSummary;
+
+

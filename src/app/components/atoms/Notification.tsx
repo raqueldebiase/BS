@@ -8,8 +8,8 @@ interface NotificationProps {
 
 const Notification: React.FC<NotificationProps> = ({ message, onClose }) => {
   return (
-    <div className="fixed bottom-4 right-4 bg-gray-800 text-white p-4 rounded-lg shadow-lg flex items-center space-x-4">
-      <span>{message}</span>
+    <div className="fixed bottom-4 right-4 bg-gray-800 text-white p-4 rounded-sm shadow-lg flex items-center space-x-4">
+      <span className='text-sm'>{message}</span>
       <Link href="/cart" className="text-blue-400 underline ml-2">
         View Cart
       </Link>
