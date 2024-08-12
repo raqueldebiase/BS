@@ -5,6 +5,7 @@ import "./globals.css";
 import { GalleryProvider } from "@/context/GalleryContext";
 import { CartProvider } from "@/context/CartContext";
 import Footer from "./components/organisms/Footer";
+import ScrollToTopButton from "./components/atoms/ButtonScrollToTop";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
             <Header /> 
             <main>{children}</main>
             <Footer />
+            <ScrollToTopButton />
           </GalleryProvider>
         </CartProvider>
       </body>
