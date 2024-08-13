@@ -38,7 +38,9 @@ const Upcoming = () => {
             <Image
               src={image.src}
               alt={`Slide ${index}`}
-              className=""
+              layout="fill"
+              objectFit="cover"
+              priority={index === activeIndex}
             />
           </div>
         ))}
