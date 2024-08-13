@@ -1,10 +1,10 @@
 import React from 'react';
 import ImageCard from '../atoms/ImageCard';
 import Upcoming from '../molecules/Upcoming';
-import News1 from '../../../../public/magazine/steven-su-kbZkBKrYBAk-unsplash.jpg';
-import News2 from '../../../../public/magazine/mcgill-library--xleXxEcvX8-unsplash.jpg';
-import News3 from '../../../../public/magazine/boston-public-library-CfeRsl6jVGQ-unsplash.jpg';
-import News4 from '../../../../public/magazine/ajeet-mestry-UBhpOIHnazM-unsplash.jpg';
+import News1 from '../../../../public/magazine/streetFeast.webp';
+import News2 from '../../../../public/magazine/vintageBeachScape.webp';
+import News3 from '../../../../public/magazine/sunlitMemories.webp';
+import News4 from '../../../../public/magazine/echoesOfInnovation.webp';
 
 const Magazine = () => {
   const images = [

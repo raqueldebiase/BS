@@ -21,6 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preload" href="/backgrounds/hero.webp" as="image" />
+      </head>
       <body className={inter.className}>
         <CartProvider>
           <GalleryProvider>
