@@ -25,6 +25,7 @@ const ImageItem: React.FC<ImageItemProps> = ({ id, src, title, description, widt
         width={width}
         height={height}
         onError={() => setHasError(true)}
+        loading="lazy"
       />
       {hasError && <p className="text-red-500">Failed to load image</p>}
       <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4 opacity-0 group-hover:opacity-100 transform translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out">
