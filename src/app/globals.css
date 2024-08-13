@@ -35,7 +35,7 @@ body {
 @media (max-width: 768px) {
   .bg-hero {
     background-image: url('../../public/backgrounds/hero-bg-mobile.webp');
-    background-size: contain;
+    background-size: cover;
     background-position: top center;
   }
   .bg-search {
