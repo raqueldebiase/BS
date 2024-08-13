@@ -19,7 +19,7 @@ export const artworksData: Artworks[] = [
 
   {
     "id": "1",
-    "src": "/spotlight/meninaSemBrinco.webp",
+    "src": "/gallery/meninaSemBrinco.webp",
     "title": "Absence of the Essential",
     "author": "Elena Maris",
     "description": "Absence of the Essential is a compelling reinterpretation of the iconic Girl with a Pearl Earring, famously attributed to Johannes Vermeer. In this striking piece, Elena Maris removes the central element of the original work—the pearl earring—creating a profound commentary on the nature of identity and value. By stripping away the defining accessory, Maris challenges viewers to reflect on what remains when the most recognizable feature is absent. The painting retains the same captivating gaze and composition, yet the missing earring transforms the work into a powerful exploration of absence and significance. The artist employs the same nuanced brushwork and rich texture characteristic of oil painting, enhancing the visual and emotional impact.",

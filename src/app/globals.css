@@ -37,6 +37,7 @@ body {
     background-image: url('../../public/backgrounds/hero-bg-mobile.webp');
     background-size: cover;
     background-position: top center;
+    background-attachment: fixed;
   }
   .bg-search {
     background-attachment: scroll;
