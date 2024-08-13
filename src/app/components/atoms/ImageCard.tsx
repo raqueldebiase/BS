@@ -18,7 +18,7 @@ const ImageCard: React.FC<ImageCardProps> = ({ src, title, description }) => {
           layout="fill"
           objectFit="cover"
           placeholder="blur"
-          blurDataURL={src.src} // Assumindo que src.src é um placeholder desfocado
+          blurDataURL={src.src} 
           className="transition-transform duration-300 group-hover:scale-105"
         />
       </div>
