@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="bg-footer text-CaramelExtraLight py-14">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 gap-md-2 px-4">
         <div>
-          <h4 className="mb-4">HELP</h4>
+          <h2 className="mb-4">HELP</h2>
           <nav>
             <ul>
               <li>
@@ -44,7 +44,7 @@ const Footer = () => {
           </nav>
         </div>
         <div>
-          <h4 className="mb-4">SERVICES</h4>
+          <h2 className="mb-4">SERVICES</h2>
           <nav>
             <ul>
               <li>
@@ -71,7 +71,7 @@ const Footer = () => {
           </nav>
         </div>
         <div>
-          <h4 className="mb-4">ABOUT</h4>
+          <h2 className="mb-4">ABOUT</h2>
           <nav>
             <ul>
               <li>
@@ -108,7 +108,7 @@ const Footer = () => {
           </nav>
         </div>
         <div>
-          <h4 className="mb-4">SOCIAL</h4>
+          <h2 className="mb-4">SOCIAL</h2>
           <p className="text-sm font-extralight">&copy; {currentYear} BlackSquare LTDA. All rights reserved.</p>
         </div>
       </div>
