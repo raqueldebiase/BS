@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 
 const Presentation = () => {
@@ -10,7 +11,7 @@ const Presentation = () => {
           <div className="flex md:justify-end flex-col md:flex-row">
             <div className="text-4xl md:text-6xl font-bold md:transform md:rotate-90">website</div>
             <div className="text-start">
-              <div className="text-6xl md:text-9xl font-bold">doesnt</div>
+              <div className="text-6xl md:text-9xl font-bold">doesn't</div>
               <div className="text-5xl md:text-8xl font-bold">exist.</div>
             </div>
           </div>
@@ -19,7 +20,7 @@ const Presentation = () => {
         {/* Description Section */}
         <div className="text-CaramelExtraLight flex items-center justify-center leading-loose tracking-wide">
           <p className='text-base md:text-xl font-medium'>
-            This website is an example of an e-commerce platform built with Next.js. It is the second version of my first project as a frontend developer, originally created with HTML, CSS, and JavaScript (with a touch of desperation). Three years later, I decided to revamp it using new technologies and the knowledge I have acquired over time. In addition to Next.js, I used Tailwind, Vercel, Git, Auth.js, among other tools.
+          Welcome to my e-commerce platform, a modern reimagining of my first frontend project. Originally crafted with HTML, CSS, and JavaScript (and a bit of trial and error), this second iteration represents how far I've come as a developer over the past three years. Now built with the power of Next.js, this site also leverages Tailwind for responsive design, Vercel for seamless deployment, and Git for version control. All reflecting the new skills and technologies I’ve embraced along my journey.
           </p>
         </div>
       </div>

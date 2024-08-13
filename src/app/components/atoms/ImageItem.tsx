@@ -13,8 +13,7 @@ interface ImageItemProps {
 }
 
 const ImageItem: React.FC<ImageItemProps> = ({ id, src, title, description, width, height, author }) => {
-  console.log('ImageItem link id:', id);
-
+  
   return (
     <div className="relative break-inside-avoid group overflow-hidden">
       <Image
