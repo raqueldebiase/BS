@@ -11,17 +11,19 @@ interface ImageCardProps {
 const ImageCard: React.FC<ImageCardProps> = ({ src, title, description }) => {
   return (
     <div className="relative h-full group overflow-hidden">
-      <div className="relative h-full">
+      {/* Contêiner que define o layout da imagem */}
+      <div className="relative h-48 md:h-full w-full">
         <Image
           src={src}
           alt={`Image of ${title}`}
-          layout="fill"
+          fill
           objectFit="cover"
           placeholder="blur"
-          blurDataURL={src.src} 
+          blurDataURL={src.src}
           className="transition-transform duration-300 group-hover:scale-105"
         />
       </div>
+      {/* Texto sobreposto */}
       <div className="absolute inset-0 bg-black bg-opacity-30 flex items-end justify-center">
         <div className="bg-black bg-opacity-60 text-white p-2 w-full">
           <h4 className="text-md font-light mb-2">{title}</h4>

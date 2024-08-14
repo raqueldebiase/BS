@@ -52,7 +52,7 @@ const Spotlight = () => {
             className={`w-full h-full bg-cover bg-center absolute top-0 left-0 transition-opacity duration-500 ${
               index === activeIndex ? 'opacity-100' : 'opacity-0'
             }`}
-            style={{ backgroundImage: `url(${imageInfo.src.src})` }} // Usar src.src para obter a URL da imagem
+            style={{ backgroundImage: `url(${imageInfo.src.src})` }} 
           >
             <div className="absolute bottom-4 left-4 bg-black bg-opacity-60 text-white p-4 rounded-sm ">
               <h2 className="text-lg italic">{imageInfo.title}</h2>
