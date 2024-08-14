@@ -79,7 +79,6 @@ const DetailPage: React.FC = () => {
               <h4 className="text-md font-semibold text-gray-800 mb-2">Technical Details:</h4>
               <ul className="list-none text-gray-600">
                 <li>Medium: {artwork.medium || 'Not specified'}</li>
-                {/* <li>Dimensions: {artwork.width} x {artwork.height} cm</li> */}
                 <li>Date Created: {artwork.dateCreated || 'Not specified'}</li>
               </ul>
             </div>

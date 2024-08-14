@@ -1,4 +1,3 @@
-
 'use client';
 import React, { useState } from 'react';
 import Image from 'next/image';
@@ -26,7 +25,7 @@ const Upcoming = () => {
   const currentImage = images[activeIndex];
 
   return (
-    <div className="relative overflow-hidden h-[20rem] md:h-[25rem]">
+    <div className="relative overflow-hidden h-[20rem] md:h-[31rem]">
       <div className="absolute inset-0 flex">
         {images.map((image, index) => (
           <div
@@ -39,14 +38,14 @@ const Upcoming = () => {
               src={image.src}
               alt={`Slide ${index}`}
               fill
-              objectFit="cover"
+              style={{ objectFit: 'cover' }}
               priority={index === activeIndex}
             />
           </div>
         ))}
       </div>
       <div className="absolute inset-0 flex items-end">
-        <div className="bg-black md:bg-opacity-50 text-white p-4 w-full">
+        <div className="bg-black bg-opacity-50 text-white p-4 w-full">
           <h4 className="text-md font-light mb-2">{currentImage.title}</h4>
           <p className='font-extralight tracking-wide text-sm'>{currentImage.description}</p>
         </div>
