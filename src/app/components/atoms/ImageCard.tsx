@@ -10,7 +10,7 @@ interface ImageCardProps {
 
 const ImageCard: React.FC<ImageCardProps> = ({ src, title, description }) => {
   return (
-    <div className="relative group overflow-hidden h-60"> {/* Define a altura fixada aqui */}
+    <div className="relative group overflow-hidden h-60">
       {/* Contêiner da imagem */}
       <div className="relative w-full h-full">
         <Image

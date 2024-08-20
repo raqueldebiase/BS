@@ -12,7 +12,7 @@ const Magazine = () => {
     { src: News2, title: 'Vintage Beach Escape', description: 'Discover the Charm of 1930s Swedish Travel Posters in Our Nostalgic Exhibition.' },
     { src: News3, title: 'Sunlit Memories', description: 'Relive the Golden Age of Coastal Travel.' },
     { src: News4, title: 'Echoes of Innovation', description: 'The Museum of Everyday Obsolescence.' },
-    // Adicione mais imagens conforme necessário
+
   ];
 
   return (
@@ -29,7 +29,7 @@ const Magazine = () => {
           <h3 className="text-lg mb-4">Talking about</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {images.map((image, index) => (
-              <div key={index} className="relative overflow-hidden h-60"> {/* Define a altura fixa aqui */}
+              <div key={index} className="relative overflow-hidden h-60"> 
                 <ImageCard
                   src={image.src}
                   title={image.title}

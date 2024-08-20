@@ -5,7 +5,7 @@ interface ActionIconProps {
   href: string;
   icon: React.ReactNode;
   label: string;
-  count?: number; // Adicionando count como uma prop opcional
+  count?: number; 
 }
 
 const ActionIcon: React.FC<ActionIconProps> = ({ href, icon, label, count }) => {

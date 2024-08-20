@@ -10,8 +10,8 @@ const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const { cart } = useCart(); // Obtendo o carrinho do contexto
-  const cartItemCount = cart.length; // Número de itens no carrinho
+  const { cart } = useCart(); 
+  const cartItemCount = cart.length; 
 
   useEffect(() => {
     if (isOpen) {

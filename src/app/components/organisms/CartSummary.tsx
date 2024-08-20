@@ -1,5 +1,5 @@
 import React from 'react';
-import { Artwork } from '../../../context/GalleryContext'; // Importar a interface Artwork
+import { Artwork } from '../../../context/GalleryContext';
 
 interface CartSummaryProps {
   cart: Artwork[];

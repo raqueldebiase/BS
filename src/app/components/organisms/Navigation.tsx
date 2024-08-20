@@ -4,7 +4,7 @@ import Link from "next/link";
 interface NavLinkProps {
   href: string;
   children: React.ReactNode;
-  onClick?: () => void; // Adicione a prop onClick
+  onClick?: () => void; 
 }
 
 const NavLink: React.FC<NavLinkProps> = ({ href, children, onClick }) => {

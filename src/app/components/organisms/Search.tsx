@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Artworks } from '../../../data/artworks'; // Ajuste conforme necessário
+import { Artworks } from '../../../data/artworks'; 
 
 interface SearchProps {
   onSearch: (query: string) => void;

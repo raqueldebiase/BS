@@ -4,7 +4,7 @@ import Hero from '../molecules/Hero';
 import Banner from '../molecules/Banner';
 import Spotlight from '../organisms/Spotlight';
 import Gallery from '../organisms/Gallery';
-import { Artwork } from '../../../context/GalleryContext'; // Importar a interface Artwork
+import { Artwork } from '../../../context/GalleryContext'; 
 import Magazine from '../organisms/Magazine';
 import Search from '../organisms/Search';
 

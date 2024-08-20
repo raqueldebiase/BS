@@ -1,6 +1,6 @@
 import React from 'react';
-import Image from 'next/image'; // Importar Image do Next.js
-import { Artwork } from '../../../context/GalleryContext'; // Atualize o caminho conforme necessário
+import Image from 'next/image';
+import { Artwork } from '../../../context/GalleryContext'; 
 
 interface ProductListProps {
   artworks: Artwork[];
@@ -15,8 +15,8 @@ const ProductList: React.FC<ProductListProps> = ({ artworks, addToCart }) => {
           <Image
             src={artwork.src}
             alt={artwork.title}
-            width={artwork.width} // Usar a largura da imagem
-            height={artwork.height} // Usar a altura da imagem
+            width={artwork.width} 
+            height={artwork.height} 
             className="w-full h-48 object-cover rounded-lg"
           />
           <h2 className="text-xl font-semibold mt-2">{artwork.title}</h2>

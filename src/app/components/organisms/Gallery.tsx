@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import GalleryItem from '../molecules/GalleryItem';
 import Button from '../atoms/Button';
-import { artworksData, Artworks } from '../../../data/artworks'; // Atualize o caminho conforme a estrutura do seu projeto
+import { artworksData, Artworks } from '../../../data/artworks'; 
 
-const initialImages = artworksData.slice(0, 7); // Carregue as primeiras 7 imagens
+const initialImages = artworksData.slice(0, 7);
 
 const Gallery: React.FC = () => {
   const [images, setImages] = useState<Artworks[]>(initialImages);

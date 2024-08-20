@@ -6,7 +6,7 @@ import Image2 from '../../../../public/spotlight/tessla.webp';
 import Image3 from '../../../../public/gallery/retratoModerno.webp';
 
 const Spotlight = () => {
-  // Array com as informações das imagens
+  
   const imageInfos = [
     {
       src: Image1,
@@ -57,7 +57,7 @@ const Spotlight = () => {
             <div className="absolute bottom-4 left-4 bg-black bg-opacity-60 text-white p-4 rounded-sm ">
               <h2 className="text-lg italic">{imageInfo.title}</h2>
               <p className='text-sm font-light my-2'>{imageInfo.description}</p>
-              {/* <ButtonMore /> */}
+
             </div>
           </div>
         ))}
