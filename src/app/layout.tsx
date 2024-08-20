@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Head from "next/head";
 import { Inter } from "next/font/google";
 import Header from "./components/organisms/Header";
 import "./globals.css";
@@ -21,9 +22,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
+      <Head>
+        <meta property="og:title" content="Black Square" />
+        <meta property="og:description" content="Digital Art Commerce" />
+        <meta property="og:image" content="/my-ecommerce-app/public/backgrounds/hero.webp" />
+        <meta property="og:url" content="https://blacksquare.vercel.app" />
+        <meta property="og:type" content="website" />
         <link rel="preload" href="/backgrounds/hero.webp" as="image" />
-      </head>
+      </Head>
       <body className={inter.className}>
         <CartProvider>
           <GalleryProvider>
