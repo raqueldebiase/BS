@@ -22,14 +22,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <meta property="og:title" content="Black Square" />
-        <meta property="og:description" content="Digital Art Commerce" />
-        <meta property="og:image" content="/my-ecommerce-app/public/backgrounds/hero.jpeg" />
-        <meta property="og:url" content="https://blacksquare.vercel.app" />
-        <meta property="og:type" content="website" />
-        <link rel="preload" href="/backgrounds/hero.webp" as="image" />
-      </Head>
+        <Head>
+          <meta property="og:title" content="Black Square" />
+          <meta property="og:description" content="Digital Art Commerce" />
+          <meta property="og:image" content="https://blacksquare.vercel.app/backgrounds/hero.jpeg" />
+          <meta property="og:url" content="https://blacksquare.vercel.app" />
+          <meta property="og:type" content="website" />
+          <link rel="preload" href="https://blacksquare.vercel.app/backgrounds/hero.webp" as="image" />
+        </Head>
       <body className={inter.className}>
         <CartProvider>
           <GalleryProvider>
