@@ -3,6 +3,14 @@ import Link from 'next/link';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+
+  // Defina as URLs das mídias sociais dinamicamente
+  const socialLinks = [
+    { href: 'https://www.linkedin.com/in/raqueldebiase/', label: 'LinkedIn' },
+    { href: 'https://raqueldebiase.eu/', label: 'Portfólio' },
+    { href: 'https://github.com/raqueldebiase', label: 'GitHub' },
+  ];
+
   return (
     <footer className="bg-footer text-CaramelExtraLight py-14">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 gap-md-2 px-4">
@@ -109,7 +117,14 @@ const Footer = () => {
         </div>
         <div>
           <h2 className="mb-4">SOCIAL</h2>
-          <p className="text-sm font-extralight">&copy; {currentYear} BlackSquare LTDA. All rights reserved.</p>
+          <p className="text-sm font-extralight">&copy; {currentYear} Raquel De Biase. All rights reserved.</p>
+          <div className="social-medias grid">
+            {socialLinks.map((link) => (
+              <Link key={link.href} href={link.href} className="hover:text-white" target="_blank">
+                {link.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
     </footer>
